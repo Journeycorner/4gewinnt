@@ -86,7 +86,7 @@ function checkPath(lastPosX, lastPosY, diffX, diffY, lastCount, turned) {
             console.log("Turned!");
             otherDirX = diffX - 2 * diffX;
             otherDirY = diffY - 2 * diffY;
-            return checkPath(lastPosX, lastPosY, otherDirX, otherDirY, lastCount, true);
+            return checkPath(lastPosX, lastPosY, otherDirX, otherDirY, 1, true);
         }
         console.log("Stop!");
         return false;
